@@ -112,7 +112,7 @@ if (isset($_SESSION['logged_in'])) {
 
   <main class="container">
     <?php
-    $statement = $pdo->prepare("SELECT * FROM articles");
+    $statement = $pdo->prepare("SELECT * FROM articles WHERE featured = 1");
     $statement->execute();
     while ($row = $statement->fetch()) {
     ?>
