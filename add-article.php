@@ -4,7 +4,7 @@ require("config.php");
 require("langmanager.php");
 require("mysql.php");
 
-if(!isset($_SESSION['logged_in'])) {
+if (!isset($_SESSION['logged_in'])) {
     header("Location: ./");
 }
 if (isset($_GET['add'])) {
@@ -32,6 +32,7 @@ if (isset($_GET['add'])) {
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
     <style>
         .bd-placeholder-img {
@@ -63,12 +64,13 @@ if (isset($_GET['add'])) {
             <input type="text" name="content" class="form-control" placeholder="<?php echo ($articlecontenttext); ?>" required>
             <input type="text" name="author" class="form-control" placeholder="<?php echo ($authortext); ?>" required>
             <p>
-            <!--<div class="checkbox mb-3">
+                <!--<div class="checkbox mb-3">
                 <label>
-                    <input type="checkbox" name="featured" value="1"> <?php #echo ($featuredtext); ?>
+                    <input type="checkbox" name="featured" value="1"> <?php #echo ($featuredtext); 
+                                                                        ?>
                 </label>
             </div>-->
-            <button class="w-100 btn btn-lg btn-primary" type="submit"><?php echo ($addtext); ?></button>
+                <button class="w-100 btn btn-lg btn-primary" type="submit"><?php echo ($addtext); ?></button>
             <p class="mt-5 mb-3 text-muted">&copy; LeProfi Software, 2021</p>
         </form>
     </main>
