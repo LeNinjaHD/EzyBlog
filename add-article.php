@@ -62,7 +62,7 @@ if (isset($_GET['add'])) {
             <!--<img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">-->
             <h1 class="h3 mb-3 fw-normal"><?php echo ($newarticles); ?></h1>
             <input type="text" name="articlename" class="form-control" placeholder="<?php echo ($articlenametext); ?>" required autofocus>
-            <input type="text" name="content" class="form-control" placeholder="<?php echo ($articlecontenttext); ?>" required>
+            <textarea name="content" class="form-control" placeholder="<?php echo ($articlecontenttext); ?>" required>
             <input type="text" name="author" class="form-control" placeholder="<?php echo ($authortext); ?>" required>
             <p>
                 <!--<div class="checkbox mb-3">
