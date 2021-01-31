@@ -118,7 +118,7 @@ if (isset($_SESSION['logged_in'])) {
     ?>
       <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
         <div class="col-md-6 px-0">
-          <h1 class="display-4 font-italic"><?php echo ($row['name']); ?></h1>
+          <h1 class="display-4 font-italic"><?php echo ($row['articlename']); ?></h1>
           <p class="lead my-3"><?php echo ($row['content']); ?></p>
           <p class="lead mb-0"><?php echo ($row['author']); ?></p>
         </div>
